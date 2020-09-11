@@ -1,0 +1,189 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  /* background: url("../../assets/images/img4.jpg"); */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+}
+
+.main-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("../../assets/images/bacground1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* width: 80%; */
+  /* margin: auto; */
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top: 2rem;
+}
+nav ul li {
+  list-style-type: none;
+  color: white;
+  padding: 0rem 1rem;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: orange;
+  font-size: 1.6rem;
+  transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+}
+
+.hero-text {
+  color: #faa500d9;
+  text-align: center;
+  position: relative;
+  top: 3rem;
+  padding: 1rem;
+  transition: 2s ease;
+  -webkit-transition: 2s ease;
+  -moz-transition: 2s ease;
+  -ms-transition: 2s ease;
+  -o-transition: 2s ease;
+}
+.search-container {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+.search-container input {
+  padding: 0.6rem;
+  border: none;
+  margin-right: 0.2rem;
+}
+.search-container button {
+  background: teal;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button {
+  position: relative;
+  top: 4rem;
+  left: -19rem;
+  padding: 0.8rem 3rem;
+  font-size: 1.2rem;
+}
+.header-hero-content {
+  width: 70%;
+  color: white;
+  position: relative;
+  top: 10rem;
+  margin: auto;
+  background: #eee;
+  padding: 1rem 0.5rem;
+  text-align: center;
+}
+.header-hero-content h1 {
+  color: orange;
+  margin-bottom: 1.8rem;
+  text-transform: capitalize;
+}
+
+.header-hero-content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 3rem;
+}
+.header-hero-content-container span {
+  background: teal;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 0rem 2rem;
+}
+/** Weather details section */
+#weather-details-section {
+  margin: 2rem 0rem;
+}
+
+#weather-suggestion-section {
+  margin: 3rem;
+}
+#weather-details-section,
+#weather-suggestion-section {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#weather-details-section {
+  margin: 2rem 0rem;
+  background: transparent;
+}
+
+.weather-days,
+.weather-advice-container {
+  max-width: 25%;
+  margin: 0rem 2rem;
+}
+.previous-day {
+  background: orange;
+}
+.current-day {
+  background: deepskyblue;
+}
+
+.next-day {
+  background: lightcyan;
+}
+
+.next-week {
+  background: lightpink;
+}
+
+.next-month {
+  background: lightskyblue;
+}
+
+/** footer */
+#footer {
+  background: black;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.footer-cols {
+  max-width: 25%;
+  margin: auto;
+  padding: 2rem;
+}
+.footer-cols svg {
+  font-size: 4rem;
+}
+@media screen and (max-width: 360px) {
+  .weather-days,
+  .footer-cols,
+  .weather-advice-container {
+    max-width: 60%;
+    /* height: 10rem; */
+  }
+}

@@ -5,12 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="./src/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./assets/fontawesome/all.min.js"></script>
 </head>
 
 <body>
-<h1> Wether api app</h1>
-<script src="./src/scripts/main.js"></script>
+    <main>
+
+        <header class="main-header">
+            <h1 class="hero-text element"></h1>
+
+            <div class="search-container">
+                <input type="text" class="citySearch" placeholder="Search by city name"><br>
+                <input type="number" class="lat-field" placeholder="Latitude">
+                <input type="number" class="long-field" placeholder="Longitude">
+                <button type="button" onclick="searchWeather()" class="search"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="header-hero-content">
+                <h1 class="city"></h1>
+                <div class="header-hero-content-container">
+                    <span id="clouds">
+                        <i class="fas fa-cloud"></i> &nbsp;
+                    </span>
+                    <span id="temp">
+                        <i class="fas far fa-clock"></i>&nbsp;
+                    </span>
+                    <span id="lat">
+
+                    </span>
+                    <span id="long">
+
+                    </span>
+
+                    <span id="feelsLike">
+
+                    </span>
+
+                    <span id="pressure">
+
+                    </span>
+
+                    <span id="humidity">
+
+                    </span>
+                </div>
+            </div>
+        </header>
+
+
+        <footer id="footer" class="footer-container">
+            <div class="footer-cols col-1">
+                <i class="fab fa-whatsapp"></i>
+                <br>
+                <p>Contact us via whatsapp</p>
+            </div>
+            <div class="footer-cols col-2">
+                <i class="fab fa-facebook"></i>
+                <br>
+                <p>Contact us via facebok</p>
+            </div>
+            <div class="footer-cols col-3">
+                <i class="fab fa-twitter"></i><br>
+                <p>Contact us via twitter</p>
+            </div>
+        </footer>
+    </main>
+    <script src="./src/scripts/main.js"></script>
+    <script src="./src/scripts/type.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 </body>
 
 </html>
